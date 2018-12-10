@@ -8,3 +8,9 @@ In order to use the GPU on google's colaboratory notebook, you must first correc
 ```
 
 Then go to Runtime > change runtime type > and switch hardware accelerator to <b>GPU</b>
+
+Finally, after initializing your model, remember to add:
+
+```
+model.to_gpu()
+```
